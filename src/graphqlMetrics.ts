@@ -58,6 +58,9 @@ const extractResolverPath = (path: Path): string => {
 };
 
 const addMetrics = (context: IGraphQLMetricEnabledContext, metric: GraphQLMetricData): void => {
+    if (!context) {
+        return;
+    }
     if (!context.metrics) {
         context.metrics = [];
     }
