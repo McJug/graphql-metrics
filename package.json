@@ -1,0 +1,26 @@
+{
+  "name": "graphql-metrics",
+  "version": "1.0.0",
+  "description": "GraphQL Metrics and Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "GraphQL",
+    "Metrics",
+    "Analytics",
+    "Analysis",
+    "Node"
+  ],
+  "author": "Tom Burbeck",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.4"
+  }
+}
