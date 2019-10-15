@@ -1,8 +1,8 @@
 {
   "name": "graphql-metrics",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "GraphQL Metrics and Analytics",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register 'tests/**/*.ts'",
     "build": "tsc"
@@ -27,5 +27,13 @@
     "mocha": "^6.2.1",
     "ts-node": "^8.4.1",
     "typescript": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McJug/graphql-metrics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McJug/graphql-metrics/issues"
+  },
+  "homepage": "https://github.com/McJug/graphql-metrics#readme"
 }
