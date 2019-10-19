@@ -4,6 +4,8 @@ tests/
 
 src/
 
+.git/
+
 tsconfig.json
 
 tslint.json
