@@ -41,20 +41,11 @@ const result = await graphql(gqlSchema, ..., ..., context);
 // context.metrics contains an array of Metrics from execution
 ```
 
-Adding a try/catch around the graphql call will still allow the developer to get partial metrics and an error from the resolver that failed:
+If a resolver throws an error partial metrics can still be recovered including the error that was thrown:
 
 ```
-const gqlSchema: GraphQLSchema = enableGraphGLMetrics ( ... );
-const context: IGraphQLMetricEnabledContext = {
-  ...,
-  metrics: [],
-};
-
-try {
-  const result = await graphql(gqlSchema, ..., ..., context);
-} catch (e) {
-  // context.metrics[indexToFailedResolver].error contains the error thrown inside that resolver
-}
+const result = await graphql(gqlSchema, ..., ..., context);
+// context.metrics[indexToFailedResolver].error contains the error thrown inside that resolver
 ```
 
 

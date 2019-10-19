@@ -4,7 +4,7 @@ import { GraphQLMetricData } from "./graphqlMetricData";
 import { Path } from "graphql/jsutils/Path";
 import { IGraphQLMetricEnabledContext } from "./graphqlMetricEnabledContext";
 
-export const enableGraphGLMetrics = (schema: GraphQLSchema): GraphQLSchema => {
+export const enableGraphQLMetrics = (schema: GraphQLSchema): GraphQLSchema => {
     setMetricsOnAllSchemaTypes(schema);
 
     return schema;

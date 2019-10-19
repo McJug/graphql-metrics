@@ -1,9 +1,9 @@
-import { enableGraphGLMetrics } from "./graphqlMetrics";
+import { enableGraphQLMetrics } from "./graphqlMetrics";
 import { GraphQLMetricData } from "./graphqlMetricData";
 import { IGraphQLMetricEnabledContext } from "./graphqlMetricEnabledContext";
 
 export {
-  enableGraphGLMetrics,
+  enableGraphQLMetrics,
   IGraphQLMetricEnabledContext,
   GraphQLMetricData,
 };
